@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>வேலை வழங்குபவர்</title>
+    <link rel="stylesheet" href="C:\Users\afshana\OneDrive\Desktop\AI-job-platform\style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">வேலைவாய்ப்பு இடுக</h2>
+        <form id="employerForm">
+            <div class="mb-3">
+                <label for="jobTitle" class="form-label">வேலை பெயர்:</label>
+                <input type="text" id="jobTitle" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="jobSkills" class="form-label">தேவையான திறன்கள்:</label>
+                <input type="text" id="jobSkills" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">வேலை இடுக</button>
+        </form>
+        <h3 class="mt-4">கிடைக்கக்கூடிய வேலைகள்:</h3>
+        <ul id="jobPosts" class="list-group"></ul>
+    </div>
+
+    <script src="C:\Users\afshana\OneDrive\Desktop\AI-job-platform\employer.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>வேலை தேடுபவர்</title>
+    <link rel="stylesheet" href="C:\Users\afshana\OneDrive\Desktop\AI-job-platform\style.css">
+    <link rel="stylesheet" href="C:\Users\afshana\OneDrive\Desktop\AI-job-platform\seeker.css"
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 வேலை தேடுபவர் பதிவு</h1>
+
+        <form id="jobSeekerForm">
+            <label for="name">👤 பெயர்:</label>
+            <input type="text" id="name" placeholder="உங்கள் பெயரை உள்ளிடவும்" required><br>
+
+            <label for="email">📧 மின்னஞ்சல்:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="skills">🛠️ திறன்கள் (கோலன் மூலமாக பிரிக்கவும்):</label>
+            <input type="text" id="skills" placeholder = "எ.கா: மின் பொறியாளர், டிரைவர்" required><br>
+
+            <label for="experience">📅 அனுபவம் (வருடங்கள்):</label>
+            <input type="number" id="experience" min="0" required><br>
+
+            <label for="jobType">🏢 விருப்பமான வேலை வகை:</label>
+            <input type="text" id="jobType" required><br>
+
+            <label for="resume">📄 சுயவிவரம் (Resume) பதிவேற்றம்:</label>
+            <input type="file" id="resume" accept=".pdf, .doc, .docx"><br>
+
+            <button type="button" onclick="submitJobApplication()">✅ விண்ணப்பிக்க</button>
+        </form>
+        <a href="index.html" class="back-button">முகப்பு</a>
+        <h2>🎯 உங்களுக்கு பொருந்திய வேலைகள்:</h2>
+        <ul id="jobSuggestions"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
