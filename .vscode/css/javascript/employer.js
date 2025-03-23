@@ -30,4 +30,3 @@ document.getElementById("employerForm").addEventListener("submit", function(even
     li.style.animation = "fadeIn 0.5s ease-in-out";
     jobPosts.appendChild(li);
 });
-
